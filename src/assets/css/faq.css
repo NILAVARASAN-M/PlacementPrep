@@ -1,0 +1,27 @@
+/* Custom Scrollbar for FAQ */
+.faq-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.faq-scrollbar::-webkit-scrollbar-thumb {
+  background: #00bfff; /* Neon Blue */
+  border-radius: 10px;
+  box-shadow: 0 0 8px #00bfff;
+}
+
+.faq-scrollbar::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+/* Neon Hover Effect */
+.hover\:shadow-neon:hover {
+  box-shadow: 0 0 10px #00bfff, 0 0 40px #00bfff;
+}
+
+.shadow-neon {
+  box-shadow: 0 0 8px #00bfff;
+}
+
+.text-neon-blue {
+  color: #00bfff;
+}

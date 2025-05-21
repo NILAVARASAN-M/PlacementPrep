@@ -1,0 +1,49 @@
+/* Dark Gen-Z Themed Footer */
+.dark-footer {
+  background: linear-gradient(135deg, #0a0f1e, #1b1f3b);
+  color: #ffffff;
+  height: 60px; /* Same as Navbar Height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -2px 10px rgba(79, 163, 209, 0.4); /* Neon Glow */
+}
+
+/* Footer Content Layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Footer Brand */
+.footer-brand p {
+  font-size: 14px;
+  color: #d1d1e0;
+  margin: 0;
+}
+
+/* Social Media Icons */
+.footer-social {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.social-icon {
+  color: #4fa3d1; /* Neon Blue */
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Neon Glow Effect on Hover */
+.social-icon:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #4fa3d1, 0 0 10px #4fa3d1;
+}
+

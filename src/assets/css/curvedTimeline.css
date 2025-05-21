@@ -1,0 +1,244 @@
+/* Scoped box-sizing */
+.page-wrapper * {
+  box-sizing: border-box;
+}
+
+/* Scoped body and html styles */
+.page-wrapper {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  min-height: 100%;
+  margin: 0;
+}
+
+.page-wrapper img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Scoped headings */
+.page-wrapper h2 {
+  font-size: 50px;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Utility classes */
+.page-wrapper .inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.page-wrapper .container {
+  width: 90vw;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-wrapper .margin-bottom-medium {
+  margin-bottom: 32px;
+}
+
+.page-wrapper .paragraph-large {
+  letter-spacing: -0.02em;
+  font-size: 20px;
+}
+
+.page-wrapper .section-timeline-heading {
+  background-color: #0a0a0a;
+}
+
+.page-wrapper .padding-vertical-xlarge {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.page-wrapper .timeline-main_heading-wrapper {
+  color: #fff;
+  text-align: center;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Timeline styles */
+.page-wrapper .timeline_component {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+}
+
+.page-wrapper .timeline_item {
+  z-index: 2;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 180px 1fr;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.page-wrapper .timeline_left {
+  text-align: right;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.page-wrapper .timeline_centre {
+  justify-content: center;
+  display: flex;
+}
+
+.page-wrapper .timeline_date-text {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  position: sticky;
+  top: 50vh;
+}
+
+.page-wrapper .timeline_text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.page-wrapper .timeline_circle {
+  background-color: #fff;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  position: sticky;
+  top: 50vh;
+  box-shadow: 0 0 0 8px #0a0a0a;
+}
+
+.page-wrapper .timeline_progress {
+  background-color: #414141;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+}
+
+.page-wrapper .timeline_progress-bar {
+  z-index: -1;
+  background: linear-gradient(to bottom, #ff6a00, #ee0979);
+  width: 3px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: height 0.3s ease-in-out;
+}
+
+
+.page-wrapper .section-timeline {
+  background-color: #0a0a0a;
+  position: relative;
+}
+
+/* Buttons and Links */
+.page-wrapper .timeline_link {
+  opacity: 0.6;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.3s;
+  display: flex;
+}
+
+.page-wrapper .timeline_link:hover {
+  opacity: 1;
+}
+
+/* Overlay Effects */
+.page-wrapper .overlay-fade-top {
+  background-image: linear-gradient(#0a0a0a, #0a0a0a00);
+  height: 80px;
+  position: absolute;
+  inset: 0% 0% auto;
+}
+
+.page-wrapper .overlay-fade-bottom {
+  background-image: linear-gradient(to top, #0a0a0a, #0a0a0a00);
+  height: 80px;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 767px) {
+  .page-wrapper h2 {
+    font-size: 40px;
+  }
+
+  .page-wrapper .paragraph-large {
+    font-size: 18px;
+  }
+
+  .page-wrapper .padding-vertical-xlarge {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .page-wrapper .timeline_item {
+    grid-template-columns: 64px 1fr;
+  }
+
+  .page-wrapper .timeline_left {
+    text-align: left;
+  }
+
+  .page-wrapper .timeline_centre {
+    justify-content: flex-start;
+  }
+
+  .page-wrapper .timeline_date-text {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+
+  .page-wrapper .timeline_text {
+    font-size: 20px;
+  }
+}
+
+/* Floating YouTube Button */
+.page-wrapper .youtube-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.page-wrapper .youtube-button:hover {
+  background-color: #e60000;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}

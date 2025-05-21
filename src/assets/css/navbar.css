@@ -1,0 +1,123 @@
+/* Dark Gen-Z Theme */
+.dark-navbar {
+  background: linear-gradient(135deg, #0a0f1e, #1b1f3b); /* Blue-Black Fusion */
+  color: #ffffff;
+}
+
+.dark-navbar .navbar-logo {
+  height: 40px; /* Adjust logo size */
+  width: auto;
+  margin-right: 10px;
+}
+
+.dark-navbar .navbar-nav .nav-link {
+  color: #d1d1e0 !important; /* Soft white */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Neon Glow Effect on Hover */
+.dark-navbar .navbar-nav .nav-link:hover {
+  color: #4fa3d1 !important; /* Neon blue */
+  text-shadow: 0 0 5px #4fa3d1, 0 0 10px #4fa3d1;
+}
+
+/* Navbar Toggler Button */
+.dark-navbar .navbar-toggler {
+  border-color: #4fa3d1; /* Neon blue */
+}
+
+/* Dropdown Styling */
+.dark-navbar .dropdown-menu {
+  background-color: #1b1f3b;
+  border: none;
+}
+
+.dark-navbar .dropdown-item {
+  color: #d1d1e0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Neon Glow Effect for Dropdown Items on Hover */
+.dark-navbar .dropdown-item:hover {
+  background-color: #4fa3d1;
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+/* Search Button */
+/* .dark-navbar .btn-outline-primary {
+  border-color: #4fa3d1;
+  color: #4fa3d1;
+} */
+
+/* Neon Glow Effect for Search Button on Hover */
+/* .dark-navbar .btn-outline-primary:hover {
+  background-color: #4fa3d1;
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff;
+} */
+
+
+/* Increase Button Width for Sign In & Sign Up */
+.dark-navbar .btn-outline-primary {
+  min-width: 120px; /* Adjust width */
+  padding: 8px 20px; /* Better padding */
+  text-align: center;
+  border-color: #4fa3d1 !important; /* Keep Neon Blue Border */
+  color: #4fa3d1 !important; /* Keep Neon Blue Text */
+}
+
+/* Make sure it still looks good on hover */
+.dark-navbar .btn-outline-primary:hover {
+  background-color: #4fa3d1 !important; /* Keep Neon Blue Background */
+  color: #ffffff !important; /* Keep White Text */
+  text-shadow: 0 0 5px #ffffff;
+}
+
+
+/* Navbar Brand */
+.dark-navbar .navbar-brand {
+  color: #4fa3d1 !important; /* Neon Blue */
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-shadow: 0 0 5px #4fa3d1, 0 0 10px #4fa3d1;
+}
+
+/* Dropdown Divider */
+.dark-navbar .dropdown-divider {
+  border-color: #4fa3d1 !important; /* Neon blue */
+  box-shadow: 0 0 5px #4fa3d1;
+}
+
+
+/* Navbar Toggler Button */
+.dark-navbar .navbar-toggler {
+  border-color: #4fa3d1 !important; /* Neon blue border */
+  background-color: transparent !important;
+  padding: 8px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Neon Glow Effect on Hover */
+.dark-navbar .navbar-toggler:hover {
+  background-color: #4fa3d1 !important; /* Neon blue */
+  border-color: #ffffff !important;
+  box-shadow: 0 0 10px #4fa3d1;
+}
+
+/* Custom Navbar Toggler Icon */
+.dark-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30' fill='%234fa3d1'%3E%3Cpath stroke='%234fa3d1' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(0 0 5px #4fa3d1);
+}
+
+/* Search Input - Neon Glow Effect on Focus */
+.dark-navbar .form-control:focus {
+  box-shadow: 0 0 10px #4fa3d1, 0 0 20px #4fa3d1;
+  border-color: #4fa3d1;
+  outline: none; /* Remove default outline */
+}
